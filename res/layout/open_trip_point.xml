@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/old_sheet"
+    >
+    
+    <TextView
+        android:id="@+id/openTripPoint_Title"
+        android:text="@string/openTripPoint_Title" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        style="@style/typewriterMachineTitle"
+    />
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal">
+            
+            <!-- Set/Change Location -->
+	        <Button
+	            android:id="@+id/openTripPoint_setChangeLocationButton"
+	            android:background="@drawable/set_change_location"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:onClick="onClickSetChangeLocation"
+	            android:layout_marginBottom="10dip" android:layout_marginRight="10dip"
+	        />
+            <!-- Show Locations -->
+            <Button
+                android:id="@+id/openTripPoint_showLocationButton"
+                android:background="@drawable/show_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickShowLocation"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+            />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal">
+            
+	        <!-- Take photo -->
+		    <Button
+		        android:id="@+id/openTripPoint_takePhotoButton"
+	            android:background="@drawable/take_photo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:onClick="onClickTakePhoto"
+	            android:layout_marginBottom="10dip" android:layout_marginRight="10dip"
+	        />
+            <!-- Show photos -->
+            <Button
+                android:id="@+id/openTripPoint_showPhotosButton"
+                android:background="@drawable/show_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickShowPhotos"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+            />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal">
+        
+	        <!-- Take video -->
+	        <Button
+	            android:id="@+id/openTripPoint_takeVideoButton"
+	            android:background="@drawable/take_video"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:onClick="onClickTakeVideo"
+	            android:layout_marginBottom="10dip" android:layout_marginRight="10dip"
+	        />
+            <!-- Show videos -->
+            <Button
+                android:id="@+id/openTripPoint_showVideosButton"
+                android:background="@drawable/show_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickShowVideos"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal">
+            
+		    <!-- Take Note -->
+		    <Button
+		        android:id="@+id/openTripPoint_takeNoteButton"
+	            android:background="@drawable/take_note"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+	            android:onClick="onClickTakeNote" android:layout_marginRight="10dip"
+	        />
+            <!-- Show Notes -->
+            <Button
+                android:id="@+id/openTripPoint_showNotesButton"
+                android:background="@drawable/show_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickShowNotes"
+                android:layout_marginLeft="10dip"
+            />
+        </LinearLayout>
+        
+    </LinearLayout>
+        
+</LinearLayout>

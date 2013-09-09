@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.anywherelabs.tripDiary"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <!-- User permission -->      
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Mocking location -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/> 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Google maps -->
+    <uses-permission android:name="android.permission.INTERNET" />
+      
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+
+        <uses-library android:name="com.google.android.maps" />
+    
+        <activity android:name=".TripDiary"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="CreateTrip">
+        </activity>
+
+        <activity android:name="SelectTrip">
+        </activity>
+
+        <activity android:name="OpenTrip">
+        </activity>
+
+        <activity android:name="CreateTripPoint">
+        </activity>
+
+        <activity android:name="SelectTripPoint">
+        </activity>
+
+        <activity android:name="TakeNote">
+        </activity>
+
+        <activity android:name="OpenTripPoint">
+        </activity>
+
+        <activity android:name="TripSettings">
+        </activity>
+
+        <activity android:name="SetChangeLocation">
+        </activity>
+
+        <activity android:name="ShowLocation">
+        </activity>
+
+        <activity android:name="ShowPhotos">
+        </activity>
+
+        <activity android:name="ShowVideos">
+        </activity>
+
+        <activity android:name="SelectNote">
+        </activity>
+
+        <activity android:name="OpenNote">
+        </activity>
+
+    </application>
+
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest> 

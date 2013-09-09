@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingLeft="10dip"
+  android:paddingRight="10dip"
+  android:background="@drawable/old_sheet" >
+  
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" >
+
+      <!-- Page Title -->
+      <TextView
+          android:id="@+id/setChangeLocation_TitleLabel"
+          android:text="@string/setChangeLocation_Title"
+          style="@style/typewriterMachineTitle"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:textSize="18sp"
+          android:paddingBottom="5dip" 
+      />
+
+      <!-- Set/Change Location GPS -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" 
+          android:paddingRight="10dip" 
+          android:gravity="center_vertical">
+          
+          <ImageView
+              android:id="@+id/setChangeLocation_GpsButton"
+              android:src="@drawable/gps_connection"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:padding="10dip"
+              android:onClick="onClickRefreshGps"
+          />
+          <EditText
+              android:id="@+id/setChangeLocation_GpsText"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#22222222"
+              android:singleLine="true"
+              android:editable="false"/>
+      </LinearLayout>
+      
+      <!-- Set/Change Location Google Maps -->
+      <com.google.android.maps.MapView
+          android:id="@+id/setChangeLocation_MapView" 
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          android:enabled="true"
+          android:clickable="true"
+          android:padding="10dip"
+          android:apiKey="0yfaEmBZwy51NSnk3OWjwUAvKdZlqFeV8oGT8zg"
+      />         
+      <!-- Buttons Google Maps-->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="10dip"
+          android:layout_gravity="center_horizontal" >
+          <!-- Ok Button -->
+          <ImageView
+              android:id="@+id/setChangeLocation_OkButton"
+              android:src="@drawable/ok_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="10dip"
+              android:onClick="onClickOkButton" 
+          />
+          <!-- Cancel Button -->
+          <ImageView
+              android:id="@+id/setChangeLocation_CancelButton"
+              android:src="@drawable/cancel_button" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="10dip"
+              android:onClick="onClickCancelButton" 
+          />
+          <!-- pushpin Button -->
+          <ImageView
+              android:id="@+id/setChangeLocation_PushPinButton"
+              android:src="@drawable/pushpin_button_released" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="10dip"
+              android:paddingLeft="50dip"
+              android:onClick="onClickPushpinButton" 
+          />
+      </LinearLayout>
+   
+  </LinearLayout>
+  
+</LinearLayout>

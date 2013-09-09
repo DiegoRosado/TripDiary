@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:background="@drawable/old_sheet"
+    android:paddingBottom="20dip" >
+  
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/openNote_Title"
+            android:text="@string/openNote_Title"
+            style="@style/typewriterMachineTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:paddingBottom="5dip"
+        />
+      
+        <!-- Form entries -->
+        <!-- Name -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+	           <TextView
+	               android:id="@+id/openNote_NameLabel"
+	               android:text="@string/openNote_Name"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content" 
+	               style="@style/typewriterMachine"
+                   android:padding="5dip"
+	           />
+	           <EditText
+	               android:id="@+id/openNote_NameText"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+                   android:background="#22222222"
+	               android:singleLine="true"
+	           />
+	   </LinearLayout>
+            	       
+       <!-- Descripton -->
+       <TextView
+          android:id="@+id/openNote_DescriptionLabel"
+          android:text="@string/openNote_Description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/typewriterMachine"
+          android:padding="5dip"
+      />
+      <EditText
+          android:id="@+id/openNote_DescriptionText"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="#22222222"
+          android:layout_weight="1"
+      />
+
+      <!-- Buttons -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal">
+          <!-- Ok Button -->
+          <ImageView
+              android:id="@+id/openNote_OkButton"
+              android:src="@drawable/ok_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingRight="10dip"
+              android:onClick="okButtonOnClick"
+          />
+          <!-- Cancel Button -->
+          <ImageView
+              android:id="@+id/openNote_CancelButton"
+              android:src="@drawable/cancel_button" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingLeft="10dip"
+              android:onClick="cancelButtonOnClick"
+          />
+          
+      </LinearLayout>
+      
+   </LinearLayout>
+  
+</LinearLayout>
+

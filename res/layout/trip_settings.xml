@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/old_sheet"
+  android:paddingLeft="20dip"
+  android:paddingRight="20dip" >
+  
+      <!-- Page Title -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" >
+          <TextView
+              android:id="@+id/tripSettings_Title"
+              style="@style/typewriterMachineTitle"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textSize="18sp"
+              android:text="@string/tripSettings_Title"
+              android:paddingBottom="5dip" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" >
+      
+	      <!-- Autotrack -->
+	      <CheckBox
+	          android:id="@+id/tripSettings_Autotrack"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content" 
+	          android:text="@string/tripSettings_Autotrack"
+              style="@style/typewriterMachine"
+	      />
+	      
+	      <!-- AutoExport -->
+	      <CheckBox
+	          android:id="@+id/tripSettings_Autoexport"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content" 
+	          android:text="@string/tripSettings_Autoexport"
+              style="@style/typewriterMachine"
+	      />
+	      
+	      <LinearLayout
+	          android:orientation="vertical"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:paddingLeft="10dip" >
+	
+		      <!-- Export Facebook -->
+		      <LinearLayout
+		          android:orientation="horizontal"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" >
+		          <CheckBox
+		              android:id="@+id/tripSettings_FacebookCheckbox"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content" 
+		              android:text="@string/tripSettings_ExportFacebook"
+                      style="@style/typewriterMachine"
+		          />
+		          <ImageView
+		              android:id="@+id/tripSettings_FacebookSettings"
+		              android:src="@drawable/facebook_settings" 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:paddingTop="5dip"
+		              android:paddingLeft="10dip"
+		              android:onClick="onClickFacebookSettings" 
+		          />
+		      </LinearLayout>
+		      
+		      <!-- Export Wordpress -->
+		      <LinearLayout
+		          android:orientation="horizontal"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" >
+		          <CheckBox
+		              android:id="@+id/tripSettings_WordpressCheckbox"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content" 
+		              android:text="@string/tripSettings_ExportWordpress"
+                      style="@style/typewriterMachine"
+		          />
+		          <ImageView
+		              android:id="@+id/tripSettings_WordpressSettings"
+		              android:src="@drawable/wordpress_settings" 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:paddingTop="5dip"
+		              android:paddingLeft="10dip"
+		              android:onClick="onClickWordpressSettings" 
+		          />
+		      </LinearLayout>
+		
+		      <!-- Export Impress -->
+		      <LinearLayout
+		          android:orientation="horizontal"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" >
+		          <CheckBox
+		              android:id="@+id/tripSettings_ImpressCheckbox"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content" 
+		              android:text="@string/tripSettings_ExportImpress"
+                      style="@style/typewriterMachine"
+		          />
+		          <ImageView
+		              android:id="@+id/tripSettings_ImpressSettings"
+		              android:src="@drawable/impress_settings" 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:paddingTop="5dip"
+		              android:paddingLeft="10dip"
+		              android:onClick="onClickImpressSettings" 
+		          />
+		      </LinearLayout>
+		
+		      <!-- Export Email -->
+		      <LinearLayout
+		          android:orientation="horizontal"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" >
+		          <CheckBox
+		              android:id="@+id/tripSettings_EmailCheckbox"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content" 
+		              android:text="@string/tripSettings_ExportEmail"
+                      style="@style/typewriterMachine"
+		          />
+		          <ImageView
+		              android:id="@+id/tripSettings_EmailSettings"
+		              android:src="@drawable/email_settings" 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:paddingTop="5dip"
+		              android:paddingLeft="10dip"
+		              android:onClick="onClickEmailSettings" 
+		          />
+		      </LinearLayout>
+	      
+	      </LinearLayout>
+	     
+	  </LinearLayout>
+      
+
+      <!-- Buttons -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:paddingBottom="10dip" >
+          <!-- Ok Button -->
+          <ImageView
+              android:id="@+id/tripSettings_OkButton"
+              android:src="@drawable/ok_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingRight="10dip"
+              android:onClick="onClickOkButton" 
+          />
+          <!-- Cancel Button -->
+          <ImageView
+              android:id="@+id/tripSettings_CancelButton"
+              android:src="@drawable/cancel_button" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingLeft="10dip"
+              android:onClick="onClickCancelButton" 
+          />
+          
+      </LinearLayout>
+  
+</LinearLayout>
+

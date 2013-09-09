@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingTop="30dip"
+  android:paddingLeft="20dip"
+  android:paddingRight="20dip"
+  android:background="@drawable/old_sheet"
+  android:paddingBottom="20dip" >
+  
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" >
+
+      <!-- Page Title -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" >
+          <TextView
+              android:id="@+id/createTrip_Title"
+              android:text="@string/createTrip_Title"
+              style="@style/typewriterMachineTitle"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textSize="18sp"
+              android:paddingBottom="5dip" />
+
+      </LinearLayout>
+      
+      <!-- Form entries -->
+      <TableLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" >
+
+	      <!-- Name -->
+	      <TableRow>
+	          <TextView
+	              android:id="@+id/createTrip_NameLabel"
+	              android:text="@string/createTrip_Name"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              style="@style/typewriterMachine"
+	              android:padding="3dip" />
+	          <EditText
+	              android:id="@+id/createTrip_NameText"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:layout_weight="1"
+                  android:background="#22222222"
+	              android:singleLine="true" />
+	
+	      </TableRow>
+	      
+	      <!-- People -->
+	      <TableRow>
+	          <TextView
+	              android:id="@+id/createTrip_PeopleLabel"
+	              android:text="@string/createTrip_People"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              style="@style/typewriterMachine"
+                  android:padding="3dip" />
+	          <EditText
+	              android:id="@+id/createTrip_PeopleText"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+                  android:layout_weight="1" 
+                  android:background="#22222222"
+	              android:singleLine="true" />
+	      </TableRow>
+	      
+	      <!-- Start Point -->
+	      <TableRow>
+	          <TextView
+	              android:id="@+id/createTrip_StartPointLabel"
+	              android:text="@string/createTrip_StartPoint"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              style="@style/typewriterMachine"
+                  android:padding="3dip" />
+	              
+	          <EditText
+	              android:id="@+id/createTrip_StartPointText"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+                  android:layout_weight="1" 
+                  android:background="#22222222"
+	              android:singleLine="true" />
+	      </TableRow>
+	      
+	      <!-- End Point -->
+	      <TableRow>
+	          <TextView
+	              android:id="@+id/createTrip_EndPointLabel"
+	              android:text="@string/createTrip_EndPoint"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              style="@style/typewriterMachine"
+                  android:padding="3dip" />
+	          <EditText
+	              android:id="@+id/createTrip_EndPointText"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+                  android:layout_weight="1" 
+                  android:background="#22222222"
+	              android:singleLine="true" />
+	      </TableRow>
+          
+      </TableLayout>
+
+      <!-- Comments -->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" >
+          <TextView
+              android:id="@+id/createTrip_DescriptionLabel"
+              android:text="@string/createTrip_Description"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/typewriterMachine"
+              android:paddingTop="5dip" />
+          <EditText
+              android:id="@+id/createTrip_DescriptionText"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#22222222" />
+      </LinearLayout>
+
+      <!-- Buttons -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal">
+          <!-- Ok Button -->
+          <ImageView
+              android:id="@+id/createTrip_OkButton"
+              android:src="@drawable/ok_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingRight="10dip"
+              android:onClick="onClickOkButton" />
+          <!-- Cancel Button -->
+          <ImageView
+              android:id="@+id/createTrip_CancelButton"
+              android:src="@drawable/cancel_button" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingLeft="10dip"
+              android:onClick="onClickCancelButton" />
+          
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+</LinearLayout>
+

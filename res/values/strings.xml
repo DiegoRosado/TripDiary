@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main -->
+    <string name="app_name">Trip Diary</string>
+
+    
+    <!-- Trip Diary Activity -->
+    <string name="createTripButton">Create Trip</string>
+    <string name="openTripButton">Open Trip</string>
+    <string name="globalSettingsButton">Settings</string>
+    
+    <!-- Create Tip Activity -->
+    <string name="createTrip_Title">Create Trip</string>
+    <string name="createTrip_Name">Trip Name</string>
+    <string name="createTrip_People">People</string>
+    <string name="createTrip_StartPoint">Start Point</string>
+    <string name="createTrip_EndPoint">End Point</string>
+    <string name="createTrip_Description">Description</string>
+    <string name="createTrip_OkButton">Ok</string>
+    <string name="createTrip_CancelButton">Cancel</string>
+    
+    <string name="createTrip_NoValidInput_TripNameEmpty">No valid input.\nTrip name can not be empty.</string>
+    <string name="createTrip_AlreadyExistsTripName">A Trip with this name already exists in the database</string>
+
+    <!-- Select Trip Activity -->
+    <string name="selectTrip_Title">Select Trip</string>
+    <string name="selectTrip_DeteleTrip">Delete Trip</string>
+    
+    <!-- Open Trip Activity -->
+    <string name="openTrip_Title">Open Trip</string>
+    <string name="openTrip_createTripPoint">Create Trip Point</string>
+    <string name="openTrip_takePhoto">Take a Photo</string>
+    <string name="openTrip_takeNote">Take a Note</string>
+    <string name="openTrip_deleteTrip">Delete Trip</string>
+    
+    <!-- Create Trip Point Activity -->
+    <string name="createTripPoint_Title">Create Trip Point</string>
+    <string name="createTripPoint_Name">Trip Point Name</string>
+    <string name="createTripPoint_Description">Description</string>
+    <string name="createTripPoint_Location">Location</string>
+    <string name="createTripPoint_Retry">Retry</string>
+    <string name="createTripPoint_Cancel">Cancel</string>
+
+    <!-- Select TripPoint Activity -->
+    <string name="selectTripPoint_Title">Select TripPoint</string>
+    <string name="selectTripPoint_DeteleTripPoint">Delete TripPoint</string>
+    
+    <!-- Take Note Activity -->
+    <string name="takeNote_Title">Take a Note</string>
+    <string name="takeNote_Name">Name</string>
+    <string name="takeNote_Description">Description</string>
+    <string name="takeNote_NoValidInput_NoteNameEmpty">No valid input.\nNote name can not be empty.</string>
+    
+    <!-- Open TripPoint Activity -->
+    <string name="openTripPoint_Title">Open TripPoint</string>
+    <string name="openTripPoint_setChangeLocation">Set/Change Location</string>
+    <string name="openTripPoint_takePhoto">Take a Photo</string>
+    <string name="openTripPoint_takeNote">Take a Note</string>
+    
+    <!-- Trip Settings Activity -->
+    <string name="tripSettings_Title">Trip Settings</string>
+    <string name="tripSettings_Autotrack">Autotrack</string>
+    <string name="tripSettings_Autoexport">AutoExport</string>
+    <string name="tripSettings_ExportFacebook">Facebook</string>
+    <string name="tripSettings_ExportWordpress">Wordpress</string>
+    <string name="tripSettings_ExportImpress">OpenOffice.org Impress</string>
+    <string name="tripSettings_ExportEmail">Email</string>
+    
+    <!-- Set/Change Location Activity -->
+    <string name="setChangeLocation_Title">Set/Change Location</string>
+    
+    <!-- Location Strings -->
+    <string name="location_CouldNotGetLocation">&lt;&lt; Could not get Location &gt;&gt;</string>
+    <string name="location_SearchingLocation">&lt;&lt; Searching Location &gt;&gt;</string>
+    
+    <!-- Show Photos Strings -->
+    <string name="showPhotos_Photos">photos</string>
+    
+    <!-- Show Videos Strings -->
+    <string name="showVideos_Videos">videos</string>
+    
+    <!-- Select Note Activity -->
+    <string name="selectNote_Title">Select Note</string>
+    <string name="selectNote_DeteleNote">Delete Note</string>
+
+    <!-- Open Note Activity -->
+    <string name="openNote_Title">Open Note</string>
+    <string name="openNote_Name">Name</string>
+    <string name="openNote_Description">Description</string>
+    <string name="openNote_NoValidInput_NoteNameEmpty">No valid input.\nNote name can not be empty.</string>
+    
+</resources>

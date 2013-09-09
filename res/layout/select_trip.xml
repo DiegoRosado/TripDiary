@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/old_sheet" >    
+    
+    <!-- Header -->
+    <TextView
+        android:id="@+id/selectTrip_Title"
+        android:text="@string/selectTrip_Title"
+        style="@style/typewriterMachineTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+    />
+    
+    <!-- List View -->
+    <ListView
+        android:id="@+id/selectTrip_ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    </ListView>
+
+        
+</LinearLayout>

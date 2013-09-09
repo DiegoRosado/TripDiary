@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingTop="30dip"
+  android:paddingLeft="20dip"
+  android:paddingRight="20dip"
+  android:background="@drawable/old_sheet"
+  android:paddingBottom="20dip" >
+  
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" >
+
+         <!-- Page Title -->
+         <TextView
+             android:id="@+id/createTripPoint_TitleLabel"
+             android:text="@string/createTripPoint_Title"
+             style="@style/typewriterMachineTitle"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:textSize="18sp"
+             android:paddingBottom="5dip" 
+         />
+
+         <!-- Trip Point Name -->
+         <TextView
+             android:id="@+id/createTripPoint_NameLabel"
+             android:text="@string/createTripPoint_Name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             style="@style/typewriterMachine"
+             android:padding="3dip" 
+         />
+         <EditText
+             android:id="@+id/createTripPoint_NameText"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#22222222"
+             android:singleLine="true" 
+         />
+
+         <!-- Description -->    
+         <TextView
+             android:id="@+id/createTripPoint_DescriptionLabel"
+             android:text="@string/createTripPoint_Description"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             style="@style/typewriterMachine"
+             android:padding="3dip" 
+         />
+         <EditText
+             android:id="@+id/createTripPoint_DescriptionText"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" 
+             android:background="#22222222"
+         />
+
+         <!-- Location -->
+         <TextView
+             android:id="@+id/createTripPoint_LocationLabel"
+             android:text="@string/createTripPoint_Location"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             style="@style/typewriterMachine"
+             android:padding="3dip" 
+         />
+         <EditText
+             android:id="@+id/createTripPoint_LocationText"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#66666666"
+             android:editable="false"
+             android:focusable="false"
+             android:singleLine="true" 
+             android:gravity="center_horizontal"
+         />
+
+      <!-- Buttons -->
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal" >
+          <!-- Ok Button -->
+          <ImageView
+              android:id="@+id/createTripPoint_OkButton"
+              android:src="@drawable/ok_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingRight="10dip"
+              android:onClick="onClickOkButton" 
+          />
+          <!-- Cancel Button -->
+          <ImageView
+              android:id="@+id/createTripPoint_CancelButton"
+              android:src="@drawable/cancel_button" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingLeft="10dip"
+              android:paddingRight="10dip"
+              android:onClick="onClickCancelButton" 
+          />
+          <!-- GPS Connection Button -->
+          <ImageView
+              android:id="@+id/createTripPoint_CancelButton"
+              android:src="@drawable/gps_connection" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dip"
+              android:paddingLeft="10dip"
+              android:onClick="onClickGpsConnectionButton" 
+          />
+	          
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+</LinearLayout>

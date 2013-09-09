@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/old_sheet"
+    >
+    
+    <!-- Title -->
+    <TextView
+        android:id="@+id/openTrip_Title"
+        android:text="@string/openTrip_Title" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        style="@style/typewriterMachineTitle"
+    />
+        
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        >
+        <!-- Create Trip and Select Trip -->        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+	        <Button
+	            android:id="@+id/openTrip_createTripPointButton"
+	            android:background="@drawable/create_trip_point"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:onClick="onClickCreateTripPoint"
+	            android:layout_marginBottom="30dip"
+                android:layout_marginRight="20dip"
+	        />
+	        <Button
+	            android:id="@+id/openTrip_selectTripPointButton"
+	            android:background="@drawable/select_trip_point"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:onClick="onClickSelectTripPoint"
+	            android:layout_marginBottom="30dip"
+	        />
+        </LinearLayout>
+
+		<!-- Export Trip and Settings -->
+		<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:id="@+id/openTrip_exportTripButton"
+                android:background="@drawable/export_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickExportTrip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginRight="20dip"
+            />
+            <Button
+                android:id="@+id/openTrip_autotrackButton"
+                android:background="@drawable/autotrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickAutotrack"
+            />
+        </LinearLayout>
+        
+    </LinearLayout>
+        
+</LinearLayout>
